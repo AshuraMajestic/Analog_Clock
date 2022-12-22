@@ -1,0 +1,249 @@
+.biggerone {
+    width: 100%;
+    height: 100%;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 30px;
+    color: gold;
+}
+
+.container {
+    background-color: none;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 10px black solid;
+}
+
+.hour-3 {
+    position: absolute;
+    top: 235px;
+    right: 10px;
+}
+
+.hour-6 {
+    position: absolute;
+    bottom: 10px;
+    right: 235px;
+}
+
+.hour-9 {
+    position: absolute;
+    top: 235px;
+    left: 10px;
+}
+
+.hour-12 {
+    position: absolute;
+    top: 10px;
+    right: 235px;
+}
+
+.hour-1 {
+    width: 7px;
+    height: 30px;
+    background-color: gold;
+    transform: rotate(35deg);
+    position: absolute;
+    top: 40px;
+    right: 130px;
+}
+
+.hour-11 {
+    width: 7px;
+    height: 30px;
+    background-color: gold;
+    transform: rotate(-35deg);
+    position: absolute;
+    top: 40px;
+    left: 130px;
+}
+
+.hour-2 {
+    width: 7px;
+    height: 30px;
+    background-color: gold;
+    transform: rotate(55deg);
+    position: absolute;
+    top: 120px;
+    right: 45px;
+}
+
+.hour-10 {
+    width: 7px;
+    height: 30px;
+    background-color: gold;
+    transform: rotate(-55deg);
+    position: absolute;
+    top: 120px;
+    left: 45px;
+}
+
+.hour-4 {
+    width: 7px;
+    height: 30px;
+    background-color: gold;
+    transform: rotate(-55deg);
+    position: absolute;
+    bottom: 120px;
+    right: 45px;
+}
+
+.hour-8 {
+    width: 7px;
+    height: 30px;
+    background-color: gold;
+    transform: rotate(55deg);
+    position: absolute;
+    bottom: 120px;
+    left: 45px;
+}
+
+.hour-5 {
+    width: 7px;
+    height: 30px;
+    background-color: gold;
+    transform: rotate(-40deg);
+    position: absolute;
+    bottom: 40px;
+    right: 130px;
+}
+
+.hour-7 {
+    width: 7px;
+    height: 30px;
+    background-color: gold;
+    transform: rotate(40deg);
+    position: absolute;
+    bottom: 40px;
+    left: 130px;
+}
+
+.hour-hand-wrapper {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+}
+
+.hour-hand {
+    position: relative;
+}
+
+.hour-hand .hand {
+    width: 7px;
+    height: 140px;
+    position: absolute;
+    background-color: gold;
+    top: 10px;
+    left: 146.5px
+}
+
+.minute-hand-wrapper {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.minute-hand {
+    position: relative;
+}
+
+.minute-hand .hand {
+    width: 7px;
+    height: 190px;
+    background-color: gold;
+    position: absolute;
+    top: 10px;
+    left: 196.5px;
+}
+
+.second-hand-wrapper {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.second-hand {
+    position: relative;
+}
+
+.second-hand .hand {
+    width: 7px;
+    height: 300px;
+    background-color: gold;
+    position: absolute;
+    top: 90px;
+    left: 196.5px;
+}
+
+.star {
+    width: 100px;
+    height: 100px;
+    background-color: none;
+    position: absolute;
+    border-radius: 50%;
+    top: 205px;
+    right: 200px;
+}
+
+.starhand {
+    position: relative;
+    margin: 10px 20px;
+}
+
+.star .triangle-1 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 60px solid #F5F3CE;
+}
+
+.star .triangle-2 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 60px solid #F5F3CE;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    top: 15px;
+}
+
+.sun {
+    position: absolute;
+    top: 205px;
+    right: 200px;
+    width: 100px;
+    height: 100px;
+    background-color: #FFDE00;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #FFDE0080, 0 0 0 20px #FFDE0080, 0 0 0 30px #FFDE0020, 0 0 0 40px #FFDE0010, 0 0 0 50px #FFDE0000, 0 0 20px 50px #FFDE0010;
+    animation: sunrise 2s infinite linear forwards, rays 2s 2s infinite linear;
+}
+
+@keyframes sunrise {
+    0% {
+        box-shadow: none;
+    }
+}
+
+@keyframes rays {
+    0% {
+        box-shadow: 0 0 0 0px #FFDE0080, 0 0 0 10px #FFDE0080, 0 0 0 20px #FFDE0020, 0 0 0 30px #FFDE0010, 0 0 0 40px #FFDE0000, 0 0 20px 50px #FFDE0010;
+    }
+    100% {
+        box-shadow: 0 0 0 10px #FFDE0080, 0 0 0 20px #FFDE0080, 0 0 0 30px #FFDE0020, 0 0 0 40px #FFDE0010, 0 0 0 50px #FFDE0000, 0 0 20px 50px #FFDE0010;
+    }
+}
